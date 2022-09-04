@@ -12,6 +12,7 @@ app.post('/webhook', (req, res) => {
 })
 app.listen(port);
 function reply(reply_token) {
+    // The tokens for education are used as an example only. the publisher has confirmed.
     let headers = {
         'Content-Type': 'application/json',
         'Authorization': 'Bearer {oYI7I1fjafeO9iMuFAD+tR3YVj0PkxrPM1BJBZbgvMHy2fFJuxlFJeckNoW2chslM3u1qGzmp685dkRMimmuGzp6S+YLTP+mC+GRUo2uLUkLvn13CsDvIKa5reekjs3+5ZGYeIg7k1HC0FbJyYzhvgdB04t89/1O/w1cDnyilFU=}'
