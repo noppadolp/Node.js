@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html> 
+    <head>
+        <title>Device page</title>
+        <style>
+            h1{
+                text-align: left;
+            }
+        </style>
+    </head>
+    <body style = "background-color : lightskyblue">
+        <form action="/device" method="get"> 
+            <h1> Query data </h1>
+            Sensor-id: <input type = "text" placeholder="Sensor-id" name="sensor_id">
+            <input type = "submit"><br>
+        </form>
+        <form action="/create_device" method="post">
+            <h1> Post data </h1>
+            Sensor-id: <input type = "text" placeholder="Sensor-id" name="new_id"> <br>
+            Sensor-name: <input type = "text" placeholder="Sensor-id" name="new_name"> <br>
+            Sensor-value: <input type = "text" placeholder="Sensor-value" name="new_value"> <br>
+            Sensor-unit: <input type = "text" placeholder="Sensor-unit" name="new_unit"><br>
+            <input type = "submit" value = "Create">
+        </form>
+    </body>
+</html>
